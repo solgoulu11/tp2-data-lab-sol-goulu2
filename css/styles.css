@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+PL:wght@100..400&display=swap');
+
+
+@keyframes animacion-de-vibracion
+{
+    0% { transform: scale(1.0); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1.0); }
+}
+
+
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+h1, body
+{
+    margin: 0;
+    background-color: rgb(200, 200, 200); 
+    background-image: url(../images/fondo.jpg)
+}
+
+/* Sección del encabezado (toda la parte de arriba antes de las imágenes) */
+header
+{
+    padding-top: 15px;
+    width: 100%;
+    height: 20vh;
+    text-align: center;
+}
+
+
+#titulo-principal
+{
+    font-family: "Playwrite PL", cursive;
+    font-size: 50px;
+}
+
+
+p
+{
+    font-size: 30px;
+}
+
+
+header a
+{
+    background-color: white;
+    color: black;
+    border: 1px dotted black;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    line-height: 30px;
+    transition: all 0.5s; 
+
+    animation-name: animacion-de-vibracion;
+    animation-duration: 0.25s;
+    animation-iteration-count: infinite;
+}
+
+a:hover
+{
+    background-color: black;
+    border-color: white;
+    color: white;
+
+    transform: scale(1.1);
+}
+
+
+main
+{
+    width: 90%; 
+    margin: auto;
+ 
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 5%;
+  
+}
+
+
+div
+{
+    width: 45%;
+    height: 30%;
+}
+
+
+img
+{
+    width: 100%;
+    height: 100%;
+}
+
+
+video
+{
+    width: 40%;
+    display: block;
+    margin: 10px auto;
+}
+
+footer {
+    width: 100%;
+    background-color: #87c3a2;
+    text-align: center;
+    padding: 20px 0;
+    bottom: 0;
+    left: 0;
+}
+
+footer p {
+    font-family: "Playwrite PL", cursive;
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
